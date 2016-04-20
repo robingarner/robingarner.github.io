@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+  <title>Robin Garner - Research</title>
+  <link rel="stylesheet" crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ=="/>
+  <link rel="stylesheet" crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX"/>
+
+  <style type="text/css">
+  .btn-clipboard {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    display: block;
+    padding: 5px 8px;
+    font-size: 12px;
+    color: #767676;
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #e1e1e8;
+    border-radius: 0 4px 0 4px;
+  }
+  .clip-parent {
+    position: relative;
+  }
+  </style>
+</head>
+
+<body marginheight="0" marginwidth="10%" topmargin="0">
+
+<div class="container">
+
+<!-- BEGIN DOCUMENT CONTENT -->
+<h1>Robin Garner</h1>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <!-- https://zenorocha.github.io/clipboard.js/ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.10/clipboard.min.js"></script>
+        <script>
+    var clipboard = new Clipboard('.clip');
+    clipboard.on('success', function(e) {
+        console.log(e);
+    });
+    clipboard.on('error', function(e) {
+        console.log(e);
+    });
+    </script>
+    
+<div>
+<address>
+Technology Services<br/>
+Southern Cross University <br>
+Lismore, NSW, 2480<br>
+<abbr title="Phone">P:</abbr> 02 6620 3281 <br>
+<abbr title="Email">E:</abbr> Robin.Garner@gmail.com
+</address>
+</div>
+<h2>Research</h2>
+My PhD research was on Memory Management.  In particular I am 
+interested in the effects that modern architectures have on the performance
+of the mechanisms of garbage collection.
+My supervisor was <a href="http://users.cecs.anu.edu.au/~steveb/">Steve Blackburn</a>,
+and together with Daniel Frampton we maintain the MMTk memory management
+toolkit.
+<p>
+My PhD thesis, "The Design and Construction of High Performance Garbage Collectors" was submitted on 13 July, 2011.  Yay!
+
+<h2>DaCapo Benchmarks</h2>
+I'm one of the maintainers of the 
+<a href="http://www.dacapobench.org/">
+Dacapo Benchmark suite</a>, a set of open source Java benchmarks.
+
+<h2>Jikes RVM</h2>
+I'm a member of the <a href="http://www.jikesrvm.org/">Jikes RVM</a> team,
+a high performance research-oriented Java virtual machine.
+<p>
+I'm currently working on documenting MMTk.  
+A <i>very</i> incomplete and rough draft is 
+available <a href="mmtk-guide.pdf">here</a>,
+and represents MMTk as of October 2005.
+
+<p>
+<h2>HTMLWriter</h2>
+I've written a very basic fluent library for creating HTML documents from Java.
+The project is housed <a href="https://github.com/robingarner/html-writer">here</a>
+
+<h2>Previous work</h2>
+My Honours project involved porting the JMTk (now MMTk) memory
+management toolkit for use in C-based runtimes.  
+<p>
+<h1>Publications</h1>
+
+<h2>Journal papers</h2>
+Blackburn, S. M., McKinley, K. S., <b>Garner, R.</b>, Hoffman, C., Khan, A. M., Bentzur, R., Diwan, A., Feinberg, D., Frampton, D., Guyer, S. Z., Hirzel, M., Hosking, A., Jump, M., Lee, H., Moss, J. E. B., Phansalkar, A., Stefanovic, D., VanDrunen, T., von Dincklage, D., and Wiedermann, B.  <br>
+<a href="dacapo-cacm-2008.pdf">Wake Up and Smell the Coffee: Evaluation Methodology for the 21st Century</a><br>
+<i><b>Communications of the ACM</b></i>, 51(8) pp 83--89, August 2008<br>
+<a href="dacapo-cacm-2008.pdf">pdf</a>
+<a role="button" data-toggle="collapse" href="#dacapo-cacm-bibtex" aria-expanded="false" aria-controls="dacapo-cacm-bibtex">bibTex</a>
+<div class="collapse clip-parent" id="dacapo-cacm-bibtex">
+  <button class="clip btn-clipboard" data-clipboard-action="copy" data-clipboard-target="#dacapo-cacm-bibtex" >Copy</button>
+  <pre id="dacapo-cacm-bibtex">
+@Article{BMG+:08, 
+  author = {Stephen M. Blackburn and Kathryn S. McKinley and Robin Garner and Chris Hoffmann and Asjad M. Khan and Rotem Bentzur and Amer Diwan and Daniel Feinberg and Daniel Frampton and Samuel Z. Guyer and Martin Hirzel and Antony Hosking and Maria Jump and Han Lee and J. Eliot and B. Moss and Aashish Phansalkar and Darko Stefanovic and Thomas VanDrunen and Daniel von Dincklage and Ben Wiedermann}, 
+  title = {{Wake Up and Smell the Coffee: Evaluation Methodology for the 21st Century}}, 
+  journal = {Communications of the ACM}, 
+  year = {2008}, 
+  month = {August}, 
+  publisher = {ACM Press}, 
+  address = {New York, NY, USA}, 
+  doi = {http://doi.acm.org/10.1145/1378704.1378723}, 
+  note = {Invited paper. CACM Research Highlights.}, 
+}
+  </pre>
+</div>
+<p>
+<h2>Refereed conference papers</h2>
+<b>R. Garner</b>, S. M. Blackburn, and D. Frampton, <br>
+<a href="scan-ismm-2011.pdf">A Comprehensive Evaluation of Object Scanning Techniques</a><br> 
+ISMM '11: Proceedings of the Tenth International Symposium on Memory Management, San Jose, CA, USA, June 4-5, 2011.
+<br />
+<a href="scan-ismm-2011.pdf">pdf</a>
+<a role="button" data-toggle="collapse" href="#scan-ismm-2011-bibtex" aria-expanded="false" aria-controls="scan-ismm-2011-bibtex">bibTex</a>
+<div class="collapse clip-parent" id="scan-ismm-2011-bibtex">
+  <button class="clip btn-clipboard" data-clipboard-action="copy" data-clipboard-target="#scan-ismm-2011-bibtex" >Copy</button>
+  <pre id="scan-ismm-2011-bibtex">
+@InProceedings{GBF:11, 
+  author = {Robin Garner and Stephen M Blackburn and Daniel Frampton}, 
+  title = {A Comprehensive Evaluation of Object Scanning Techniques}, 
+  booktitle = {Proceedings of the Tenth ACM SIGPLAN International Symposium on Memory Management, ISMM '11, San Jose, CA, USA, June 4 - 5}, 
+  year = {2011}, 
+  month = {jun}, 
+  doi = {http://dx.doi.org/10.1145/1993478.1993484}, 
+  location = {San Jose, CA, USA}, 
+}
+  </pre>
+</div>
+
+<p>
+<p>
+Daniel Frampton, Stephen M. Blackburn, Perry Cheng, <b>Robin Garner</b>, David P. Grove, J. Eliot B. Moss and Sergey I. Salishev.
+<br>
+<a href="vee25-frampton.pdf">Demystifying Magic: High-level Low-level Programming.</a>
+<br>
+VEE 2009: The 2009 ACM SIGPLAN/SIGOPS International Conference on Virtual Execution Environments.
+<br />
+<a href="vee25-frampton.pdf">pdf</a>
+<a role="button" data-toggle="collapse" href="#vee25-frampton-bibtex" aria-expanded="false" aria-controls="vee25-frampton-bibtex">bibTex</a>
+<div class="collapse clip-parent" id="vee25-frampton-bibtex">
+  <button class="clip btn-clipboard" data-clipboard-action="copy" data-clipboard-target="#vee25-frampton-bibtex" >Copy</button>
+  <pre id="vee25-frampton-bibtex">
+@Inproceedings{FBC+:09, 
+  author = {Frampton, Daniel and Blackburn, Stephen M. and Cheng, Perry and Garner, Robin J. and Grove, David and Moss, J. Eliot B. and Salishev, Sergey I.},
+  title = {Demystifying magic: high-level low-level programming}, 
+  booktitle = {VEE '09: Proceedings of the 2009 ACM SIGPLAN/SIGOPS International Conference on Virtual Execution Environments}, 
+  year = {2009}, 
+  isbn = {978-1-60558-375-4}, 
+  pages = {81--90}, 
+  location = {Washington, DC, USA}, 
+  doi = {http://doi.acm.org/10.1145/1508293.1508305}, 
+  publisher = {ACM}, 
+  address = {New York, NY, USA}, 
+}
+  </pre>
+</div>
+
+<p>
+<b>Garner, R.</b>, Blackburn, S. M., Frampton, D.
+<br>
+<a href="dacapo-oopsla-2006.pdf">Effective Prefetch for Mark-Sweep Garbage Collection</a>
+<br>
+ISMM '07: Proceedings of the 2007 International Symposium on Memory Management
+<br />
+<a href="dacapo-oopsla-2006.pdf">pdf</a>
+<a href="dacapo-oopsla-2006.tgz">source</a>
+<a role="button" data-toggle="collapse" href="#dacapo-oopsla-2006-bibtex" aria-expanded="false" aria-controls="dacapo-oopsla-2006-bibtex">bibTex</a>
+<div class="collapse clip-parent" id="dacapo-oopsla-2006-bibtex">
+  <button class="clip btn-clipboard" data-clipboard-action="copy" data-clipboard-target="#dacapo-oopsla-2006-bibtex" >Copy</button>
+  <pre id="dacapo-oopsla-2006-bibtex">
+@InProceedings{GBF:07, 
+  author = {Robin Garner and Stephen M. Blackburn and Daniel Frampton}, 
+  title = {Effective Prefetch for Mark-Sweep Garbage Collection}, 
+  booktitle = {ISMM '07: Proceedings of the 2007 International Symposium on Memory Management}, 
+  year = {2007}, 
+  month = {October}, 
+  publisher = {ACM}, 
+  location = {Montreal, Canada}, 
+  doi = {http://doi.acm.org/10.1145/1296907.1296915}, 
+  patch = {dacapo-oopsla-2006.tgz}, 
+}
+  </pre>
+</div>
+<p>
+Blackburn, S. M., <b>Garner, R.</b>, Hoffman, C., Khan, A. M., 
+McKinley, K. S., Bentzur, R., Diwan, A., Feinberg, D., 
+Frampton, D., Guyer, S. Z., Hirzel, M., Hosking, A., 
+Jump, M., Lee, H., Moss, J. E. B., Phansalkar, A., 
+Stefanovic, D., VanDrunen, T., von~Dincklage, D., Wiedermann, B.
+<br>
+<a href="dacapo-oopsla-2006.pdf">The DaCapo Benchmarks: Java Benchmarking Development and Analysis</a>
+<br>
+OOPSLA '06: Proceedings of the 21st annual ACM SIGPLAN conference on Object-Oriented Programing, Systems, Languages, and Applications
+<br />
+<a href="dacapo-oopsla-2006.pdf">pdf</a>
+<a href="dacapo-oopsla-2006-talk.pdf">talk</a>
+<a role="button" data-toggle="collapse" href="#dacapo-oopsla-2006-bibtex" aria-expanded="false" aria-controls="dacapo-oopsla-2006-bibtex">bibTex</a>
+<div class="collapse clip-parent" id="dacapo-oopsla-2006-bibtex">
+  <button class="clip btn-clipboard" data-clipboard-action="copy" data-clipboard-target="#dacapo-oopsla-2006-bibtex" >Copy</button>
+  <pre id="dacapo-oopsla-2006-bibtex">
+@Inproceedings{BGH+:06, 
+  author = {Stephen M. Blackburn and Robin Garner and Chris Hoffmann and Asjad M. Khang and Kathryn S. McKinley and Rotem Bentzur and Amer Diwan and Daniel Feinberg and Daniel Frampton and Samuel Z. Guyer and Martin Hirzel and Antony Hosking and Maria Jump and Han Lee and J. Eliot and B. Moss and Aashish Phansalkar and Darko Stefanovic and Thomas VanDrunen and Daniel von Dincklage and Ben Wiedermann}, 
+  title = {{The DaCapo benchmarks: Java benchmarking development and analysis}}, 
+  booktitle = {OOPSLA '06: Proceedings of the 21st annual ACM SIGPLAN conference on Object-oriented programming systems, languages, and applications}, 
+  year = {2006}, 
+  isbn = {1-59593-348-4}, 
+  pages = {169--190}, 
+  location = {Portland, Oregon, USA}, 
+  doi = {http://doi.acm.org/10.1145/1167473.1167488}, 
+  publisher = {ACM Press}, 
+  address = {New York, NY, USA}, 
+  }
+  </pre>
+</div>
+
+<h2>Workshop papers</h2>
+<b>R. Garner</b><br/>
+<a href="07-garner-1.pdf">Porting the JMTk memory management toolkit</a><br/>
+WOSSA'2004 - The First International Workshop on Object Systems 
+and Software Architectures, Victor Harbour, SA, Australia, Jan 2004.
+<br />
+<a href="07-garner-1.pdf">pdf</a>
+
+<h2>Thesis</h2>
+<a href="http://hdl.handle.net/1885/9053">
+The design and construction of high performance garbage collectors.</a> <br />
+PhD thesis, Australian National University, 2012
+<p />
+<p />
+<a href="http://hdl.handle.net/1885/39952">
+JMTk: A portable memory management toolkit.</a> <br />
+Honours thesis, Australian National University, 2003
+<p>
+
+<h1>Teaching</h1>
+<table columns="4" class="table table-striped">
+<thead>
+<tr> <th>Session<th>Role<th>Course Code<th>Description
+</thead>
+<tr> <td>2007<td>Course Tutor<td>COMP2400<td>Relational Databases
+<tr> <td>2007<td>Tutor<td>COMP1100<td>Introduction to Programming and Algorithms
+<tr> <td>2006<td>Tutor<td>COMP3310<td>Computer Networks
+<tr> <td>2006<td>Tutor/Guest Lecturer<td>COMP3420<td>Database Systems
+<tr> <td>2005<td>Tutor<td>COMP2400<td>Relational Databases
+<tr> <td>2005<td>Tutor/Guest Lecturer<td>COMP3420<td>Database Systems
+<tr> <td>2004<td>Tutor<td>COMP2400<td>Relational Databases
+<tr> <td>2004<td>Tutor<td>COMP3420<td>Database Systems
+</table>
+<p />
+<p />
+
+</div>
+<!-- END FOOTER -->
+</body>
+</html>
+
